@@ -1,0 +1,80 @@
+/* The animation code */
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+  }
+  
+  /* The element to apply the animation to */
+
+
+#div1 {
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    animation-name: changeColor;
+    animation-duration: 4s;
+  }
+  
+  #div2 {
+      position: relative;
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    animation-name: changeColor, mymove;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+  }
+
+  #div3 {
+    background-color: yellow;
+  padding: 20px;
+  display: none;
+  }
+
+  span:hover + div3{
+    display: block;
+  }
+  
+p {
+    color: red;
+}
+
+a {
+    color: blue;
+}
+
+body {
+    font-size: 14px;
+    color: navy;
+}
+
+h1 {
+    color: #ffc;
+    background-color: #009;
+    font-family: 'Sedgwick Ave', cursive;
+}
+
+h2:hover {
+    font-family: 'Comforter', cursive;
+}
+
+a.ex2:hover, a.ex2:active {font-size: 150%;}
+
+h3 {
+    color: purple;
+  text-shadow: 2px 2px 4px #000000;
+  font-size:xx-large
+}
+
+  @keyframes changeColor {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+  }
+
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 300px;}
+  }
+  
